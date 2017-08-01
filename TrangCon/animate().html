@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>animate()</title>
+    <script src="jquery-3.2.1.min.js"></script>
+    <link href="../style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<style>
+    .text_animateList span{
+        width: 200px;
+        height: 30px;
+        padding-right: 10px;
+        display: inline-block;
+
+    }
+</style>
+<div class="main">
+    <div class="head">
+        <h1><a href="http://localhost:63342/Webstorm/JQUERY/index.html" style="text-decoration: none">Các hàm thông dụng của JQuery</a></h1>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="http://localhost:63342/Webstorm/JQUERY/TrangCon/find().html"> find()</a></li>
+            <li><a href="https://hocwebchuan.com/reference/jquery/jquery_hide.php"> hide()</a></li>
+            <li><a href="http://localhost:63342/Webstorm/JQUERY/TrangCon/toggle.html"> toggle()</a></li>
+            <li><a href="http://localhost:63342/Webstorm/JQUERY/TrangCon/show().html"> show()</a></li>
+            <li><a href="http://localhost:63342/Webstorm/JQUERY/TrangCon/animate().html"> animate()</a></li>
+            <li><a href="#"> fadeIn()</a></li>
+            <li><a href="#"> fadeOut()</a></li>
+            <li><a href="#"> slideUp()</a></li>
+            <li><a href="#"> slideDown()</a></li>
+            <li><a href="#"> fadeOut()</a></li>
+            <li><a href="#"> fadeOut()</a></li>
+
+        </ul>
+    </div>
+    <div id="content">
+        <div class="dinhnghia">
+            <h2>Định nghĩa và sử dụng</h2>
+
+            <p>.animate(): Thực hiện một hình ảnh động (animate) tùy chỉnh của một tập hợp các thuộc tính css.</p>
+            <hr>
+        </div>
+        <div class="CauTruc">
+            <h2>Cấu trúc</h2>
+
+            <div class="souretext">
+                <p>.animate(thuộc tính, tốc độ,'easing',funtion(){}</p>
+                <p><strong>Thuộc tính</strong>:</p>
+                <ul class="text_animateList">
+                    <li><span>backgroundPositionX</span> (VD: backgroundPositionX:"+=100px")</li>
+                    <li><span>backgroundPositionY</span> (VD: backgroundPositionY:"+=100px")</li>
+                    <li><span>borderWidth</span> (VD: borderWidth:"10px")</li>
+                    <li><span>borderBottomWidth</span> (VD: borderBottomWidth:"10px")</li>
+                    <li><span>borderLeftWidth</span> (VD: borderLeftWidth:"10px")</li>
+                    <li><span>borderRightWidth</span> (VD: borderRightWidth:"10px")</li>
+                    <li><span>borderTopWidth</span> (VD: borderTopWidth:"10px")</li>
+                    <li><span>borderSpacing</span> (VD: borderSpacing:"10px")</li>
+                    <li><span>margin</span> (VD: margin:"+=100px")</li>
+                    <li><span>marginBottom</span> (VD: marginBottom:"+=100px")</li>
+                    <li><span>marginLeft</span> (VD: marginLeft:"+=100px")</li>
+                    <li><span>marginRight</span> (VD: marginRight:"+=100px")</li>
+                    <li><span>marginTop</span> (VD: marginTop:"+=100px")</li>
+                    <li><span>opacity</span> (VD: opacity:0.25)</li>
+                    <li><span>outlineWidth</span> (VD: outlineWidth:"10px")</li>
+                    <li><span>padding</span> (VD: padding:"+=100px")</li>
+                    <li><span>paddingBottom</span> (VD: paddingBottom:"+=100px")</li>
+                    <li><span>paddingLeft</span> (VD: paddingLeft:"+=100px")</li>
+                    <li><span>paddingRight</span> (VD: paddingRight:"+=100px")</li>
+                    <li><span>paddingTop</span> (VD: paddingTop:"+=100px")</li>
+                    <li><span>height</span> (VD: height:"+=100px")</li>
+                    <li><span>width</span> (VD: width:"+=100px")</li>
+                    <li><span>maxHeight</span> (VD: maxHeight:"+=100px")</li>
+                    <li><span>maxWidth</span> (VD: maxWidth:"+=100px")</li>
+                    <li><span>minHeight</span> (VD: minHeight:"+=100px")</li>
+                    <li><span>minWidth</span> (VD: minWidth:"+=100px")</li>
+                    <li><span>fontSize</span> (VD: fontSize:"1em")</li>
+                    <li><span>bottom</span> (VD: bottom:"+=100px")</li>
+                    <li><span>left</span> (VD: left:"+=100px")</li>
+                    <li><span>right</span> (VD: right:"+=100px")</li>
+                    <li><span>top</span> (VD: top:"+=100px")</li>
+                    <li><span>letterSpacing</span> (VD: letterSpacing:"+=10px")</li>
+                    <li><span>wordSpacing</span> (VD: wordSpacing:"+=10px")</li>
+                    <li><span>lineHeight</span> (VD: lineHeight:"+=10px")</li>
+                    <li><span>textIndent</span> (VD: textIndent:"10px")</li>
+                </ul>
+                <p><strong>Tốc độ</strong> có thể bằng số hoặc bằng chữ: slow, fast (mặc đinh 400).</p>
+                <p><strong>Easing</strong> có thể sử dụng swing hoặc linear (mặc định swing).</p>
+                <pre>$('.test')<span class="blue">.animate({
+    opacity: 0.25,
+    left: "+=50",
+    height: "toggle"
+    }, 5000, 'swing', function() {
+        // Animation complete.
+    });</span>;</pre>
+            </div>
+            <hr>
+        </div>
+        <div class="vidu">
+            <h2>Ví dụ minh họa</h2>
+      <pre class="getSource">&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;Tiêu đề&lt;/title&gt;
+&lt;script src="<em class="blue">http://code.jquery.com/jquery-latest.js</em>"&gt;&lt;/script&gt;
+&lt;style&gt;
+button {
+    margin: 10px;
+}
+img {
+    position: relative;
+    left: 10px;
+}
+&lt;/style&gt;
+&lt;script&gt;
+$(function(){
+    $('button').click(function() {
+        $('img')<span class="blue">.animate({
+        opacity: 0.25,
+        left: '+=50',
+        height: 'toggle'
+        },2000, function() {
+            $('button').text("Click tiếp để thấy hiệu ứng");
+        });</span>
+    });
+});
+&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;p&gt;&lt;button&gt;Click here&lt;/button&gt;&lt;/p&gt;
+&lt;img src="images/bg_hwc.gif" alt="" width="129" height="129"&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+        </div>
+        <hr>
+        <h2>Kết quả hiển thị</h2>
+
+        <iframe src="http://localhost:63342/Webstorm/JQUERY/TrangCon/animate_test.html" width=100% min-height="500px">
+
+        </iframe>
+        <p>Click vào button để xem hiệu ứng animate.</p>
+    </div>
+</div>
+</body>
+</html>
+
+

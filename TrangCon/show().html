@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>show()</title>
+    <script src="../jquery-3.2.1.min.js"></script>
+    <link href="../style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="main">
+    <div class="head">
+        <h1><a href="http://localhost:63342/Webstorm/JQUERY/index.html" style="text-decoration: none">Các hàm thông dụng của JQuery</a></h1>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="http://localhost:63342/Webstorm/JQUERY/TrangCon/find().html"> find()</a></li>
+            <li><a href="https://hocwebchuan.com/reference/jquery/jquery_hide.php"> hide()</a></li>
+            <li><a href="http://localhost:63342/Webstorm/JQUERY/TrangCon/toggle.html"> toggle()</a></li>
+            <li><a href="http://localhost:63342/Webstorm/JQUERY/TrangCon/show().html"> show()</a></li>
+            <li><a href="http://localhost:63342/Webstorm/JQUERY/TrangCon/animate().html"> animate()</a></li>
+            <li><a href="#"> fadeIn()</a></li>
+            <li><a href="#"> fadeOut()</a></li>
+            <li><a href="#"> slideUp()</a></li>
+            <li><a href="#"> slideDown()</a></li>
+            <li><a href="#"> fadeOut()</a></li>
+            <li><a href="#"> fadeOut()</a></li>
+
+        </ul>
+    </div>
+    <div id="content">
+        <div class="dinhnghia">
+            <h2>Định nghĩa và sử dụng</h2>
+
+            <p style="padding-left: 5px">.show(): Hiện thành phần phù hợp.<br>
+                Thành phần sẽ được hiện giống như được sử dụng style="display: block;".</p>
+            <hr>
+        </div>
+        <div class="CauTruc">
+            <h2>Cấu trúc</h2>
+
+            <div class="souretext">
+                <p> .show() :</p>
+                <pre>$('p')<span class="blue">.show()</span>;</pre>
+            </div>
+            <div class="souretext">
+                <p> .show(Độ bền)</p>
+                <a>Độ bền có thể bằng số hoặc bằng chữ: slow, fast.</a>
+                <pre>$('p')<span class="blue">.show(300)</span>;</pre>
+                <pre>$('p')<span class="blue">.show("fast")</span>;</pre>
+            </div>
+            <div class="souretext">
+                <p> .hide(độ bền, funtion(){...}):</p>
+                <a>Độ bền có thể bằng số hoặc bằng chữ: slow, fast.</a>
+                <pre>$('p')<span class="blue">.show(300,funtion(){
+                     $('span').show(100);)</span>;</pre>
+            </div>
+
+            <hr>
+        </div>
+        <div class="vidu">
+            <h2>Ví dụ minh họa</h2>
+  <pre class="souretext">&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;Tiêu đề&lt;/title&gt;
+&lt;script src="<em class="blue">http://code.jquery.com/jquery-latest.js</em>"&gt;&lt;/script&gt;
+&lt;style&gt;
+div {
+    background-color: blue;
+    display: none;
+    float: left;
+    margin-right: 20px;
+    height: 100px;
+    width: 100px;
+}
+p {
+    clear: both;
+}
+&lt;/style&gt;
+&lt;script&gt;
+$(function(){
+    $('button').click(function(){
+        $('.test03')<span class="blue">.show(2000)</span>;
+        $('.test02')<span class="blue">.show('slow')</span>;
+        $('.test01')<span class="blue">.show()</span>;
+    });
+});
+&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;p&gt;&lt;button&gt;Click&lt;/button&gt;&lt;/p&gt;
+&lt;div class="test03"&gt;show(2000)&lt;/div&gt;
+&lt;div class="test02"&gt;show('slow')&lt;/div&gt;
+&lt;div class="test01"&gt;show()&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+        </div>
+        <hr>
+        <h2>Kết quả hiển thị</h2>
+
+        <iframe src="http://localhost:63342/Webstorm/JQUERY/TrangCon/showTest.html" width=100% min-height="400px">
+
+        </iframe>
+        <p>Click vào nút để thấy hiệu ứng</p>
+    </div>
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+    <script src="jquery-3.2.1.min.js"></script>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+    <div class="head">
+        <h1><a href="http://localhost:63342/Webstorm/JQUERY/index.html" style="text-decoration: none">Các hàm thông dụng của JQuery</a></h1>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="http://localhost:63342/Webstorm/JQUERY/TrangCon/find().html"> find()</a></li>
+            <li><a href="http://localhost:63342/Webstorm/JQUERY/TrangCon/hide().html"> hide()</a></li>
+            <li><a href="#"> toggle()</a></li>
+            <li><a href="#"> show()</a></li>
+            <li><a href="#"> animate()</a></li>
+            <li><a href="#"> fadeIn()</a></li>
+            <li><a href="#"> fadeOut()</a></li>
+            <li><a href="#"> slideUp()</a></li>
+            <li><a href="#"> slideDown()</a></li>
+            <li><a href="#"> fadeOut()</a></li>
+            <li><a href="#"> fadeOut()</a></li>
+
+        </ul>
+    </div>
+    <div id="content">
+        <div class="gioithieu">
+            <h2>Giới thiệu JQuery</h2>
+            <p>JQuery là thư viện javascript đa trình duyệt được thiết kế đơn giản hóa lập trình phía máy người dùng của HTML,
+                Phát hành vào tháng 1 năm 2006, tại BarCamp NYC bởi John Regig. Được sử dụng bởi hơn 52% trong 10.000 truy cập nhiều nhất các trang web, jQuery là thư viện JavaScript phổ biến nhất được sử dụng ngày nay.
+            </p>
+            <hr>
+        </div>
+        <div class="Huongdan">
+            <h2>Hướng dẫn cài đặt</h2>
+            <ul>
+                <li><p>Chúng ta có thể download phiên bản mới nhất tại:
+                    <a href="http://jquery.com/download/">http://jquery.com/download,</a>
+                    sử dụng tag "script" kết nối file jquery nội dung như sau:</p>
+                    <div class="souretext">
+                        <p>&lt;script src="<em class="blue">jquery.js</em>"&gt;&lt;/script&gt;<br></p>
+                    </div>
+                    <p>Nếu không muốn download, chúng ta có thể kết nối file jquery tới file html thông qua một số cách sau:</p>
+                </li>
+                <ul>
+                    <li>
+                        Kết nối trực tiếp từ trang web jquery với phiên bản mới nhất: http://code.jquery.com/jquery-latest.js.
+                    </li>
+                    <div class="souretext">
+                        <p>&lt;script src=&quot;<em class="blue">http://code.jquery.com/jquery-latest.js</em>&quot;&gt;&lt;/script&gt;</p>
+                    </div>
+
+                    <li>Sử dụng CDN Google: tất cả phiên bản jquery có sẵn tại đây:</li>
+                    <a href="https://developers.google.com/speed/libraries/devguide?hl=vi#jquery">https://developers.google.com/speed/libraries/devguide?hl=vi#jquery</a>
+                    <br><br>
+                    <li>Sử dụng CDN Microsoft: tất cả phiên bản jquery có sẵn tại đây:</li>
+                    <a href="http://www.asp.net/ajaxlibrary/cdn.ashx">http://www.asp.net/ajaxlibrary/cdn.ashx</a>
+
+                </ul>
+            </ul>
+            <hr>
+            <h2>Hướng dẫn sử dụng</h2>
+            <p>Có 2 cách viết một nội dung jquery:</p>
+            <ul>
+                <li>Viết nội dung jquery bên trong một $(document).ready(), điều này sẽ giúp cho đoạn script chạy khi các đoạn code trong file html đã được load xong,
+                    không bao gồm các liên kết ngoài như image, iframe, file css, file script,...</li>
+                <div class="souretext">
+                    <p>$(document).ready(function(){<br>
+                        <span class="gray">//Nội dung jquery viết ở đây...</span><br>
+                        });
+                    </p>
+                </div>
+                <li>Viết nội dung jquery bên trong $(window).load(), điều này sẽ giúp cho đoạn script chạy khi toàn bộ trang web đã được load xong,
+                    bao gồm tất cả image, iframe, và cả các liên kết ngoài.</li>
+                <div class="souretext">
+                    <p>$(window).load(function(){<br>
+                        <span class="gray">//Nội dung jquery viết ở đây...</span><br>
+                        });</p>
+                </div>
+            </ul>
+        </div>
+
+    </div>
+    </div>
+
+</body>
+</html>
